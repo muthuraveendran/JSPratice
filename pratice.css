@@ -1,0 +1,11 @@
+body {
+    padding:0;
+    margin:0;
+}
+
+
+.header{
+    background-color:#0078D7;
+    height: 40px;
+    color: white;
+}
