@@ -1,0 +1,186 @@
+.image {
+  height: 100vh;
+  width: 50vw;
+  background-color: red;
+  float: left;
+}
+.login {
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-content {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5rem;
+  box-sizing: border-box;
+}
+.heading-top {
+  height: 5%;
+  width: 100%;
+}
+
+.heading-content {
+  font-size: 1.6rem;
+  height: 8%;
+  /* background-color: blueviolet; */
+}
+
+.heading-content span {
+  color: #3271ce;
+  font-weight: bold;
+}
+
+.heading-bottom {
+  color: #c0c0c0;
+  /* text-align: center; */
+  height: 12%;
+}
+
+.tab-box {
+  height: 10%;
+}
+
+.tab1 {
+  /* border-top: blueviolet; */
+  height: 2%;
+  width: 12%;
+  float: left;
+  background-color: #e1e2e2;
+}
+
+.tab2 {
+  /* border-top: blueviolet; */
+  height: 2%;
+  width: 12%;
+  /* float: right;     */
+  margin-left: 15%;
+  background-color: #e1e2e2;
+  /* top: -0.1rem; */
+}
+
+form input {
+  height: 30%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex: auto;
+  /* border-radius: 1px; */
+  /* box-sizing: border-box; */
+  /* border: cornsilk; */
+  border-color: #f6f6f6;
+  border-style: double;
+}
+
+.formLink {
+  height: 40%;
+  margin-top: 5%;
+  color: #dcdcdc;
+  margin-right: 10%;
+}
+
+.link1 span {
+  float: left;
+}
+
+.link2 {
+  float: right;
+  margin-right: 18%;
+}
+
+.loginBtn {
+  float: left;
+  height: 30%;
+  width: 30%;
+  background-color: #2178ff;
+  border-radius: 0.2rem;
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.createBtn {
+  float: right;
+  height: 30%;
+  width: 30%;
+  color: #2178ff;
+  border-radius: 0.2rem;
+  border: 5rem;
+  text-align: center;
+  bottom: 5%;
+  box-shadow: white;
+  background-color: white;
+  margin-right: 33%;
+  padding-top: 2%;
+  border: none;
+  border-color: #f6f6f6;
+  border-style: solid;
+}
+.button {
+  height: 70%;
+}
+
+.fotter {
+  height: 10%;
+  margin-top: 30%;
+}
+
+.unique-color {
+  color: #babcbd;
+}
+
+.same-color {
+  margin: 2%;
+  color: #7899cf;
+}
+
+.fotter span {
+  margin: 2%;
+}
+
+
+.fa {
+  right: 16%;
+  top: 49%;
+  color: grey;
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  }
+
+  .loginBtn, .createBtn {
+    cursor: pointer;
+  }
+
+  .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .container{
+    padding-top:50px;
+    margin: auto;
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .login-content {
+    width: 100%;
+  }
+
+}

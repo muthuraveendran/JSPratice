@@ -1,0 +1,14 @@
+<!-- 
+{{control.errors | json}}
+
+ -->
+ <!-- {{control.errors | json}} -->
+
+ <!-- {{submitting}} -->
+
+<div *ngIf= "control.errors &&  ( control.touched  ||  submitting)">
+    <small *ngIf="control.errors.required" class="form-text" >Required Field</small>
+    <small *ngIf="control.errors.minlength" class="form-text" >Password is to short</small>
+    <small *ngIf="control.errors.email" class="form-text" >Enter valid email address</small>
+
+</div>

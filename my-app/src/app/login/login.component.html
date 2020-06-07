@@ -1,0 +1,49 @@
+<div class="login">
+  <div class="image"></div>
+  <div class="login-content">
+    <div class="heading-top"></div>
+    <div class="heading-content">
+      Welecome to <span>Brickshare</span>
+    </div>
+    <div class="heading-bottom">We make easy for everyone to invest <br> in real estate</div>
+    <div class="tab-box">
+      <div class="tab1"></div>
+      <div class="tab2"></div>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+     
+
+      <!-- {{ loginForm.value | json }} -->
+      <input type="email" name="email" formControlName="email" placeholder="Email">
+      <!-- {{isSubmitted}} -->
+      <app-validation [control]="loginForm.controls.email" [submitting]=isSubmitted></app-validation>
+      <!-- {{password}} -->
+      <input [type]="password" name="password" formControlName="password" placeholder="Password">
+      <div (click)="onClick()">
+        <i class="fa fa-eye" aria-hidden="true" *ngIf= "!show"></i>
+        <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="show"></i>
+      </div> 
+      <app-validation [control]="f.password" [submitting]=isSubmitted></app-validation>
+      <div class="formLink">
+        <div class="link1">
+          <span>Remmember me</span>
+        </div>
+        <div class="link2">
+          <span>Forgot password?</span>
+        </div>
+      </div>
+      <div class="button">
+        <div class="loginBtn"  (click) ="onSubmit()" routerLink="/home">Login</div>
+        <!-- {{loginForm.value | json}} -->
+        <div class="createBtn" >Create profile</div>
+      </div>
+    </form>
+
+    <div class="fotter">
+      <span class="span1 unique-color">Or login with</span>
+      <span class="span1 same-color">Facebook</span>
+      <span class="span1 same-color">Linkedin</span>
+      <span class="span1 same-color">Google</span>
+    </div>
+  </div>
+</div>
