@@ -1,0 +1,146 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 200px;
+  margin: 2px 30px;
+  border: 2px solid gainsboro;
+}
+
+.container-title {
+  color: blue;
+  font-size: 30px;
+  margin: 20px 30%;
+}
+
+.form-text,
+.card-text {
+  margin: 20px 30%;
+  width: 40%;
+  border-bottom-color: lightgray;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form-text:focus,
+.card-text:focus {
+  outline-width: 0;
+}
+
+.form-buttom,
+.card-buttom {
+  display: block;
+  margin-left: 30%;
+  height: 25px;
+  width: 100px;
+  color: white;
+  background-color: darkcyan;
+  border: none;
+}
+
+.card-buttom {
+  background-color: black;
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+.form-buttom:focus,
+.card-buttom:focus {
+  outline-width: 0;
+}
+
+.card-title {
+  color: black;
+  font-size: 30px;
+  margin: 20px 30%;
+}
+
+.card-action {
+  /* min-height is used expan the dic dynamically */
+  min-height: 300px;
+
+  margin: 2px 30px;
+  /* display: flex; */
+  border: 2px solid gainsboro;
+}
+
+li {
+  margin-left: 30%;
+  text-decoration: none;
+}
+
+i {
+  /* margin-left: 30%; */
+  right: 100px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+/* 
+text-overflow:ellipsis; only works when the following are true:
+The element's width must be constrained in px (pixels). Width in % (percentage) won't work.
+The element must have overflow:hidden and white-space:nowrap set.
+
+*/
+li {
+  width: 32%;
+  height: 20px;
+  display: block;
+  /* overflow: hidden */
+  border: 2px solid gainsboro;
+  /* margin-left: 10px; */
+  padding: 6px 40px;
+  /* margin: 10px 0; */
+  margin-top: 5px;
+  /* overflow:hidden will hide the text.if the text length is greater than width length */
+  overflow: hidden;
+  /* text-overflow: ellipsis will give ... at end if we use overflow: hidden; */
+  text-overflow: ellipsis;
+  /* background-color: black; */
+}
+
+a {
+  position: fixed;
+}
+
+span {
+  /* width: 370px; */
+  position: absolute;
+  /* overflow:hidden will hide the text.if the text length is greater than width length */
+  overflow: hidden;
+  /* text-overflow: ellipsis will give ... at end if we use overflow: hidden; */
+  text-overflow: ellipsis;
+}
+
+.hover-content {
+  display: none;
+}
+
+/* which is used to hover in a new place */
+span:hover + .hover-content {
+  display: inline-block;
+  white-space: normal;
+  height: 75px;
+  width: 500px;
+  color: brown;
+  background-color: white;
+  position: absolute;
+  top: 270px;
+  left: 440px;
+  background-color: aqua;
+  /*  word-wrap: break-word; break the word in the particular div limit*/
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+.fa-remove {
+  color: red;
+  position: relative;
+  margin-left: 100%;
+  margin-top: -18px;
+}
