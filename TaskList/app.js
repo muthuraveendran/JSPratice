@@ -130,8 +130,8 @@ function removeElement(e) {
     if(e.target.classList.contains("fa-remove")) {
     e.target.parentElement.remove();
   }
+  
  /* Remove Target from Local */
-//  let data =document.querySelector('ul li ');
 console.log("<<<<<<<<<<<<<<<<<<<<<<< From Local >>>>>>>>>>>>>>>>>>>>>>>", e.target.parentElement);
   removeTaskFromLocalStorage(e.target.parentElement);
 }

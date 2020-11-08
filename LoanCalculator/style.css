@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+.full-container {
+    height: 100%;
+    width: 100%;
+ background-color: 606f58;
+ position: absolute;
+}
+
+.loan-container {
+    min-height: 350px;
+    width: 450px;
+    background-color: white;
+    position: relative;
+    margin-left: 450px;
+    top: 20px;
+}
+
+h1 {
+display: flex;
+justify-content: center;
+color: black;
+}
+
+.form-group {
+    height: 40px;
+}
+
+.form-group input {
+    height: 28px;
+    width: 350px;
+/* margin-auto: and display:block will make the input box in center */
+   margin: auto;
+   display: block;
+   border-color: whitesmoke;
+   border: 2px solid gainsboro;
+   /* used to set input box border '0' for default */
+   outline-width: 0;
+}
+
+#calculate-btn {
+    background-color: #003;
+    color: white;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    position: relative;
+   bottom: 30px;
+}
+
+.result-input {
+    padding-left: 150px;
+}
+
+.group-icon {
+  padding-left: 30px;
+}
+
+.form-group span {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 4px;
+    color: gray;
+}
+
+.loan-input span {
+    height: 28px;
+    width: 20px;
+    top: 54px;
+    margin-left: 51px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: gray;
+}
+
+.symbol-span span {
+    height: 28px;
+    color: #003;
+    width: 20px;
+    margin-left: 60px;
+}
+
+.danger-alert {
+    color: red;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 15px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* bottom: 10px; */
+    position: relative;
+
+    margin-left: 45px;
+    /* height: 20px; */
+    width: 80%;
+    background-color: palevioletred;
+    /* margin-top: 10px; */
+    top: 10px;
+
+}
+
+#loading img {
+    margin-left: 120px;
+}

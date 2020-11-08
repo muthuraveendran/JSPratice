@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Loan Calculator</title>
+
+    <style>
+        #loading , #results {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="outter-container">
+    <div class="full-container">
+
+    </div>
+
+    <div class="loan-container">
+        <!-- Form  -->
+        <h1 class="heading">Loan Calculator</h1>
+        <form id="loan-form">
+            <div class="form-group symbol-span">
+                <span>₹</span>
+                <input type="number" id="loan-amount" class="group-icon" placeholder="Loan Amount">
+            </div>
+            <div class="form-group symbol-span">
+                <span>%</span>
+                <input type="number" id="interest" class="group-icon" placeholder="Interest">
+            </div>
+            <div class="form-group">
+                <input type="number" id="repay" placeholder="Years To Repay">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="calculate-btn" value="Calculate">
+            </div>
+        </form>
+        <!-- LOADER HERE -->
+            <div id="loading">
+                <img src="./resource/loading.gif" alt="Page is Loading">
+            </div>
+        <!-- Rsesult -->
+        <div class="result" id="results">
+            <div class="result-container">
+                <h3>Results</h3>
+            </div>
+        <div class="form-group">
+            <span>Monthly Payment</span>
+            <!-- <label for="monthly-payment">Monthly Payment</label> -->
+            <input type="number" id="monthly-payment"  class="result-input" disabled>
+            <!-- <input name="searchbox" id="monthly-payment" onfocus="if (this.value=='search') this.value = ''" type="text" value="search"> -->
+
+        </div>
+        <div class="form-group">
+            <span>Monthly Payment</span>
+            <input type="number" id="total-payment" class="result-input"  disabled>
+        </div>
+        <div class="form-group">
+            <span>Total Interest</span>
+            <input type="number" id="total-interest" class="result-input"  disabled>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+ <script src="./app.js"></script>
+</body>
+</html>
