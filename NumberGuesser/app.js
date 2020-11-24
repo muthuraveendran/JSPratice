@@ -17,7 +17,6 @@ maxNumber = document.querySelector('.max-num'),
 guessBtn = document.querySelector('.guesser-submit'),
 form = document.querySelector('.number-gusser'),
 guessInput = document.querySelector('.gusser-input'),
-// guessInput = document.querySelector('.number-gusser'),
 message = document.querySelector('.message');
 
 /* Assign UI min and max */
