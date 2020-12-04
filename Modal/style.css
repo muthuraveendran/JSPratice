@@ -1,0 +1,42 @@
+body {
+    background-color: #edeef6;
+}
+
+
+.modal-container {
+    background-color: white;
+    position: fixed;
+    top:0;
+    /* left: 0; */
+    height: 25vh;
+    width: 205vh;
+    bottom: 10px;
+    margin-top: 120px;
+    margin-left: 150px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+button {
+    height: 30px;
+    width: 130px;
+    color: black;
+    background-color: greenyellow;
+    border: none;
+    cursor: pointer;
+    /* outline-width: 0; */
+
+}
