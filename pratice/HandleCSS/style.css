@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: grey;
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.icon {
+    color: aliceblue;
+    margin-left: 450px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.closebtn {
+    display: none;
+}
+
+.addbtn {
+    /* display: none; */
+}
+
+
+.sub-content {
+    /* visibility: hidden; */
+    height: 300px;
+    width: 500px;
+    background-color: rebeccapurple;
+    margin-top: 54px;
+    display: none;
+}

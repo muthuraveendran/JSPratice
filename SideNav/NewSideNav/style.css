@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+.sideNav {
+    overflow-x: hidden;
+    height: 90%;
+    width: 0;
+    /* display: none; */
+    background-color: black;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    position: fixed;
+    height: 100%;
+}
+
+.sideNav a {
+    text-decoration: none;
+    bottom: 50px;
+    display: block;
+    height: 50px;
+    text-align: center;
+
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}

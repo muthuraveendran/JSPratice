@@ -1,0 +1,53 @@
+.sidenav {
+overflow-x: hidden;
+/* z-index: 1; */
+transition: 0.5s;
+height: 100%; /* 100% Full-height */
+position: fixed; /* Stay in place */
+background-color: black;
+ top: 0;
+left: 0;
+width: 0;
+/* display: none; */
+  }
+
+  .sidenav a {
+      display: block;
+      height: 50px;
+     text-decoration: none;
+     transition: 0.3s;
+
+  }
+
+  .closebtn {
+      margin-left: 50px;
+      margin-top: 50px;
+
+  }
+
+  #main {
+      height: 100%;
+      /* width: 1115px; */
+      width: 1450px;
+      /* margin-left: 43px; */
+      top: 0;
+      background-color: aquamarine;
+      margin-top: -26px;
+      /* float: left; */
+
+  }
+
+  span {
+      height: 40px;
+      background-color: brown;
+  }
+  
+  /* The navigation menu links */
+  /* .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  } */
